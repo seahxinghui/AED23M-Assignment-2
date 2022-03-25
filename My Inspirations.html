@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Baking</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+ }
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #7e7e7e;
+  color: white;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("baking2.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+}
+
+h2 {
+  text-align: center;
+  margin-right: 50px;
+  margin-left: 150px;
+}
+
+p {
+  text-indent: 100px;
+  text-align: center;
+  margin-top: 25 px;
+  margin-bottom: 25px;
+  margin-right: 50px;
+  margin-left: 50px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.video {
+  text-align:center
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.footer {
+  background-color: #e5d1fe;
+  padding: 3px;
+  text-align: center;
+}
+
+p.a {
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="index.html">My Hobby</a>
+  <a href="My Bakes.html">My Bakes</a>
+  <a class="active" href="My Inspirations.html">My Inspirations</a>
+</div>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h2 style="font-size:50px">My Inspirations</h2>
+  </div>
+</div>
+
+<p>I always try to bake something new, trying different recipes each time.</p>
+
+<p>Some of the time, what I bake is based on the ingredients I have at home. For instance, when there are 
+overriped bananas, I would bake banana crumble muffins. Or, if there are many earl grey tea bags left, I would bake earl grey 
+macarons or biscuits.</p>
+
+<p>Most of the time, I look at Youtube videos for inspiration and ideas for what to bake. Some of the channels that I often visit
+are Cooking Tree, Nino's Home and HidaMari Cooking. Not only are their recipes delicious, but also easy to follow. Their videos are also
+very relaxing to watch. Below are some of the videos that I have followed and have baked delicious bakes from.</p>
+
+<div class="video">
+<iframe width="1013" height="570" src="https://www.youtube.com/embed/LIEn3nGdNGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+
+<br>
+
+<div class="video">
+<iframe width="1013" height="570" src="https://www.youtube.com/embed/0qq2MACXNWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+
+<br>
+
+<div class="video">
+<iframe width="1013" height="570" src="https://www.youtube.com/embed/zyX5elAVJmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+
+<p>I also enjoy watching cooking shows such as Masterchef. Besides the entertainment value such shows gives, it is also fascinating to see
+participants cook incredible dishes and bakes. One of the most memorable contestant for me is Reynold Poernomo. He never fails to impress, 
+has many creative ideas that are out of the box and creates not only beautiful but also delicious dishes and desserts.</p>
+
+<div class="video">
+<iframe width="1013" height="570" src="https://www.youtube.com/embed/rknHkImmKz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+
+<br>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+<script>
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="footer">
+  <p class="a">Life is <span style="color:red"> just better</span> with fresh bakes &#128523;</p>
+</div>
+
+</body>
+</html>
+
+

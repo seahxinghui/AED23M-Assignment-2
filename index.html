@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Baking</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+ }
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #7e7e7e;
+  color: white;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("cupcakes2.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+}
+
+h2 {
+  text-align: center;
+  margin-right: 50px;
+  margin-left: 150px;
+}
+
+p {
+  text-indent: 100px;
+  text-align: center;
+  margin-top: 25 px;
+  margin-bottom: 25px;
+  margin-right: 50px;
+  margin-left: 50px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.p1 {
+  font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.footer {
+  background-color: #e5d1fe;
+  padding: 3px;
+  text-align: center;
+}
+
+p.a {
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="index.html">My Hobby</a>
+  <a href="My Bakes.html">My Bakes</a>
+  <a href="My Inspirations.html">My Inspirations</a>
+</div>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h2 style="font-size:80px">Baking</h2>
+    <p>"Stressed spelt backwards is desserts"</p>
+  </div>
+</div>
+
+<h2>My Hobby</h2>
+
+<p>I love to eat - especially desserts. And what's better than eating
+desserts made by others? Making your own desserts! I love to bake and
+baking is my hobby! My love for baking started when I joined my mum in her yearly Chinese New Year
+cookies baking when I was young. I have sinced baked many different types of desserts
+and have been baking on a regular basis.</p>
+
+<p class="p1" style="background-color:AntiqueWhite;">"Happiness is a day spent baking"</p>
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="banana crumble.jpg" alt="Banana Crumble Muffins" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="macarons.jpg" alt="Macarons" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="chocochip muffins.jpg" alt="Chocolate Chip Muffins" style="width:100%">
+  </div>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+<script>
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="footer">
+  <p class="a">Life is <span style="color:red"> just better</span> with fresh bakes &#128523;</p>
+</div>
+
+</body>
+</html>
+
+

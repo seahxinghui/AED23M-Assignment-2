@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Baking</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+ }
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #7e7e7e;
+  color: white;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("baking.jpeg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+}
+
+h2 {
+  text-align: center;
+  margin-right: 50px;
+  margin-left: 150px;
+}
+
+p {
+  text-indent: 100px;
+  text-align: center;
+  margin-top: 25 px;
+  margin-bottom: 25px;
+  margin-right: 50px;
+  margin-left: 50px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.p1 {
+  font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #301934;
+  font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot { 
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 20px}
+}
+
+div.video {
+  text-align: center;
+  margin-left: 55px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.footer {
+  background-color: #e5d1fe;
+  padding: 3px;
+  text-align: center;
+}
+
+p.a {
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="index.html">My Hobby</a>
+  <a class="active" href="My Bakes.html">My Bakes</a>
+  <a href="My Inspirations.html">My Inspirations</a>
+</div>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h2 style="font-size:50px">My Bakes</h2>
+  </div>
+</div>
+
+<p style="background-color:Beige;">Besides baking Chinese New Year cookies with my mum, I do bake many other kinds of desserts. I 
+especially love baking <span style="color:purple; font-variant: small-caps"> muffins and macarons</span>. Baking makes me happy and I often bake when I am stressed
+and need a break. Although it can be tiring at times, I think it is a very therapeutic activity. </p>
+
+<p style="background-color:LavenderBlush;">I often bake a lot to share with my friends and family. It is always very heartwarming to see my friends
+and family enjoying my bakes. I usually bake <span style="color:purple; font-variant: small-caps">almond cookies </span>during Chinese New Year. Not only do I bake enough for my family and for when relatives
+come and visit, I also bake many more for my friends. I also often bake <span style="color:purple; font-variant: small-caps">brownies </span>for my friends.</p>
+
+<p style="background-color:Lavender;">Although I mostly bake sweet desserts such as <span style="color:purple; font-variant: small-caps"> macarons and cookies</span>, I have also tried to bake
+<span style="color:purple; font-variant: small-caps"> bread, tarts and pies</span>. Of course, not all my bakes are successful. Sometimes, they turn out overcooked, 
+soggy, or just falls apart. While it is sad when my bakes turn out bad, I will always try to analyse
+the problem and try again. To others it may be tiring but to me, it is a very fun process. When I see
+my bakes turn out good and delicious, I always feel a sense of accomplishment and happiness.</p>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="oreo macarons.jpg" width="50%" style="vertical-align:middle;margin:0px 250px">
+    <div class="text">Oreo Macarons</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="blackout brownies.jpg" width="50%" style="vertical-align:middle;margin:0px 250px">
+    <div class="text">Blackout Brownies</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="cream choux.jpg" style="width:100%">
+    <div class="text">Cream Choux</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="coffee buns.jpg" style="width:100%">
+    <div class="text">Coffee buns</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="choco macarons.jpg" width="50%" style="vertical-align:middle;margin:0px 250px">
+    <div class="text">Chocolate Macarons</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="chocochip cookies.jpg" width="50%" style="vertical-align:middle;margin:0px 250px">
+    <div class="text">Chocolate Chip Cookies</div>
+  </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3800); // Change image every 2 seconds
+}
+</script>
+
+<p>Besides taking pictures of my bakes, I sometimes also record timelapse of the baking in process.
+To me, it is very fascinating to see your bakes being baked in timelapse and there is this sense of achievement
+when my bakes turn out well.</p>
+
+<p>Below are 2 timelapse videos of macarons and chocolate chip cookies!</p>
+
+<div class="video">
+<video width="90%" height="auto" autoplay loop muted>
+  <source src="macarons timelapse.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+<p><span style="color:red; font-variant: small-caps">Macarons</span></p>
+
+<div class="video">
+<video width="90%" height="auto" autoplay loop muted>
+  <source src="choco chip cookies timelapse.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+<p><span style="color:red; font-variant: small-caps">Chocolate Chip Cookies</span></p>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+<script>
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="footer">
+  <p class="a">Life is <span style="color:red"> just better</span> with fresh bakes &#128523;</p>
+</div>
+
+</body>
+</html>
+
+
